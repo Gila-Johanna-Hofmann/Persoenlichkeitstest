@@ -58,6 +58,8 @@ fieldset {
 }
 
 #ergebnis>img, #startseite>img {
+    display: block;
     width: 80%;
     height: auto;
+    margin: 1em auto;
 }
