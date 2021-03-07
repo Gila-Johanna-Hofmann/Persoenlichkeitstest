@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Braunscher Nullsummen-Persönlichkeitstest</title>
+</head>
+<body>
+    <div id="rahmen">
+
+        <div id="startseite">
+            <h1>Persönlichkeitstest</h1>
+            <h2>Bist du ein Heinz oder ein Charly?</h2>
+            <img src="heinzunhorst.jpg" alt="Ein Bild von Heinz und Horst">
+            <button id="startbutton" class="knopp">START</button>
+        </div>
+
+        <div id="quizteil" class="invisible">
+            <h1>Auf geht's!</h1>
+            <form action="">
+                <p>Frage1</p> <!--Hier kommt der Fragetext hin-->
+                <fieldset>
+                    <div>
+                        <input type="radio" id="antwort1a" name="antwort1" value="a">
+                        <label for="antwort1a">Antwort1a</label> <!--Hier kommt der Antworttext hin-->
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort1b" name="antwort1" value="b">
+                        <label for="antwort1b">Antwort1b</label>
+                </div>
+                </fieldset>
+
+                <p>Frage2</p>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="antwort2a" name="antwort2" value="a">
+                        <label for="antwort2a">Antwort2a</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort2b" name="antwort2" value="b">
+                        <label for="antwort2b">Antwort2b</label>
+                    </div>
+                </fieldset>
+                <p></p>
+                <input type="submit" id="auswertenButton" value="Auswerten!" class="knopp">
+            </form>
+            
+        </div>
+        <div id="auswertung" class="invisible">
+            <h1>Das Ergebnis steht fest: Du bist ein</h1>
+            <div id="ergebnis"></div>
+            <button id="goAgainButton" class="knopp">Nochmal?</button>
+        </div>
+    </div>
+    <script src="fragespiel.js"></script>
+
+</body>
+</html>
+

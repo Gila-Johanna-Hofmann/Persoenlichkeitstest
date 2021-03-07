@@ -1,0 +1,63 @@
+
+
+.spielstufen {
+    border: 1px solid black;
+}
+
+.knopp {
+    background-color: red;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:plum;
+}
+
+#rahmen {
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+}
+
+.invisible {
+    display: none;
+}
+
+#startseite, #auswertung {
+    text-align: center;
+}
+
+fieldset>div {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+fieldset {
+    border: none;
+}
+
+#auswertenButton {
+    margin: 0 auto;
+    display: block; 
+}
+
+#quizteil>h1 {
+    text-align: center;
+}
+
+#ergebnis {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#ergebnis>img, #startseite>img {
+    width: 80%;
+    height: auto;
+}
