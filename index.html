@@ -1,3 +1,6 @@
+<!--This is basically just a single index.html-page, 
+    whos sections get displayed based on the users actions-->
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -9,7 +12,7 @@
 </head>
 <body>
     <div id="rahmen">
-
+        <!--First Section: "Landing/Starting" Section-->
         <div id="startseite">
             <h1>Persönlichkeitstest</h1>
             <h2>Bist du ein Heinz oder ein Charly?</h2>
@@ -17,14 +20,18 @@
             <button id="startbutton" class="knopp">START</button>
         </div>
 
+        <!--Second Section: the personality test-->
         <div id="quizteil" class="invisible">
             <h1>Auf geht's!</h1>
-            <form action="">
-                <p>Frage1</p> <!--Hier kommt der Fragetext hin-->
+            <form action=""> <!--Note to myself: Form und Fieldset: Good Practice for 
+                Multiple Choice (?)-->
+                <p>Frage1</p> <!--This is where the questions go-->
+
+                <!--This is where the answers go / for outcome 1 "Heinz": value=a, for outcome 2 "Horst": value=b-->
                 <fieldset>
                     <div>
                         <input type="radio" id="antwort1a" name="antwort1" value="a">
-                        <label for="antwort1a">Antwort1a</label> <!--Hier kommt der Antworttext hin-->
+                        <label for="antwort1a">Antwort1a</label>
                     </div>
                     <div>
                         <input type="radio" id="antwort1b" name="antwort1" value="b">
@@ -56,53 +63,57 @@
                     </div>
                 </fieldset>
 
+                <!--reversed order of answers is displayed (b before a)-->
+
                 <p>Frage4</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort4a" name="antwort4" value="a">
-                        <label for="antwort4a">Antwort4a</label>
-                    </div>
-                    <div>
                         <input type="radio" id="antwort4b" name="antwort4" value="b">
                         <label for="antwort4b">Antwort4b</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort4a" name="antwort4" value="a">
+                        <label for="antwort4a">Antwort4a</label>
                     </div>
                 </fieldset>
 
                 <p>Frage5</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort5a" name="antwort5" value="a">
-                        <label for="antwort5a">Antwort5a</label>
-                    </div>
-                    <div>
                         <input type="radio" id="antwort5b" name="antwort5" value="b">
                         <label for="antwort5b">Antwort5b</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort5a" name="antwort5" value="a">
+                        <label for="antwort5a">Antwort5a</label>
                     </div>
                 </fieldset>
 
                 <p>Frage6</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort6a" name="antwort6" value="a">
-                        <label for="antwort6a">Antwort6a</label>
-                    </div>
-                    <div>
                         <input type="radio" id="antwort6b" name="antwort6" value="b">
                         <label for="antwort6b">Antwort6b</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort6a" name="antwort6" value="a">
+                        <label for="antwort6a">Antwort6a</label>
                     </div>
                 </fieldset>
 
                 <p>Frage7</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort7a" name="antwort7" value="a">
-                        <label for="antwort7a">Antwort7a</label>
-                    </div>
-                    <div>
                         <input type="radio" id="antwort7b" name="antwort7" value="b">
                         <label for="antwort7b">Antwort7b</label>
                     </div>
+                    <div>
+                        <input type="radio" id="antwort7a" name="antwort7" value="a">
+                        <label for="antwort7a">Antwort7a</label>
+                    </div>
                 </fieldset>
+
+                <!--regular order of answers recommences-->
 
                 <p>Frage8</p>
                 <fieldset>
@@ -140,51 +151,55 @@
                     </div>
                 </fieldset>
 
+                <!--reversed order of answers is displayed (b before a)-->
+
                 <p>Frage11</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort11a" name="antwort11" value="a">
-                        <label for="antwort11a">Antwort11a</label>
-                    </div>
-                    <div>
                         <input type="radio" id="antwort11b" name="antwort11" value="b">
                         <label for="antwort11b">Antwort11b</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort11a" name="antwort11" value="a">
+                        <label for="antwort11a">Antwort11a</label>
                     </div>
                 </fieldset>
 
                 <p>Frage12</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort12a" name="antwort12" value="a">
-                        <label for="antwort12a">Antwort12a</label>
-                    </div>
-                    <div>
                         <input type="radio" id="antwort12b" name="antwort12" value="b">
                         <label for="antwort12b">Antwort12b</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort12a" name="antwort12" value="a">
+                        <label for="antwort12a">Antwort12a</label>
                     </div>
                 </fieldset>
 
                 <p>Frage13</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort13a" name="antwort13" value="a">
-                        <label for="antwort13a">Antwort13a</label>
-                    </div>
-                    <div>
                         <input type="radio" id="antwort13b" name="antwort13" value="b">
                         <label for="antwort13b">Antwort13b</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="antwort13a" name="antwort13" value="a">
+                        <label for="antwort13a">Antwort13a</label>
                     </div>
                 </fieldset>
 
                 <p></p>
                 <input type="submit" id="auswertenButton" value="Auswerten!" class="knopp">
             </form>
-            
+          
+            <!--Third Section: Evaluation Section-->
         </div>
         <div id="auswertung" class="invisible">
             <h1>Das Ergebnis steht fest: Du bist ein</h1>
             <div id="ergebnis"></div>
             <button id="goAgainButton" class="knopp">Nochmal?</button>
+            <!--goAgainButton takes the site back to it's original settings-->
         </div>
     </div>
     <script src="fragespiel.js"></script>

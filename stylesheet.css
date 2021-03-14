@@ -4,7 +4,8 @@
     border: 1px solid black;
 }
 
-.knopp {
+
+.knopp { /*styling for the buttons*/
     background-color: red;
     color: white;
     font-size: xx-large;
@@ -25,7 +26,9 @@ body {
     margin:0 auto;
 }
 
-.invisible {
+/*used in JS to make sections of index.html appear/disappear;
+default for sections #quizteil and #auswertung*/
+.invisible { 
     display: none;
 }
 
