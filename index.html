@@ -14,10 +14,10 @@
     <div id="rahmen">
         <!--First Section: "Landing/Starting" Section-->
         <div id="startseite">
-            <h1>Persönlichkeitstest</h1>
-            <h2>Bist du ein Heinz oder ein Charly?</h2>
+            <h1>Bist du Typ Heinz oder Typ Charlie?</h1>
+            <h2>Ein ganz besonderer Persönlichkeitstest</h2>
             <img src="heinzunhorst.jpg" alt="Ein Bild von Heinz und Horst">
-            <button id="startbutton" class="knopp">START</button>
+            <button id="startbutton" class="knopp">Start</button>
         </div>
 
         <!--Second Section: the personality test-->
@@ -25,178 +25,177 @@
             <h1>Auf geht's!</h1>
             <form action=""> <!--Note to myself: Form und Fieldset: Good Practice for 
                 Multiple Choice (?)-->
-                <p>Frage1</p> <!--This is where the questions go-->
-
+                <p>Wenn du ins Süßigkeitenfach greifst, suchst du nach...</p> <!--This is where the questions go-->
                 <!--This is where the answers go / for outcome 1 "Heinz": value=a, for outcome 2 "Horst": value=b-->
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort1a" name="antwort1" value="a">
-                        <label for="antwort1a">Antwort1a</label>
+                        <input type="radio" id="antwort1a" name="antwort1" value="a" autocomplete="off">
+                        <label for="antwort1a">Gummibärchen - aber nicht die Weißen oder Gelben!</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort1b" name="antwort1" value="b">
-                        <label for="antwort1b">Antwort1b</label>
+                        <input type="radio" id="antwort1b" name="antwort1" value="b" autocomplete="off">
+                        <label for="antwort1b">sauren Colaflaschen</label>
                 </div>
                 </fieldset>
 
-                <p>Frage2</p>
+                <p>Mit welchem Wort würden Andere dich beschreiben?</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort2a" name="antwort2" value="a">
-                        <label for="antwort2a">Antwort2a</label>
+                        <input type="radio" id="antwort2a" name="antwort2" value="a" autocomplete="off">
+                        <label for="antwort2a">"Macher"</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort2b" name="antwort2" value="b">
-                        <label for="antwort2b">Antwort2b</label>
+                        <input type="radio" id="antwort2b" name="antwort2" value="b" autocomplete="off">
+                        <label for="antwort2b">"Grüner Elefant"</label>
                     </div>
                 </fieldset>
 
-                <p>Frage3</p>
+                <p>Das hast du IMMER dabei:</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort3a" name="antwort3" value="a">
-                        <label for="antwort3a">Antwort3a</label>
+                        <input type="radio" id="antwort3a" name="antwort3" value="a" autocomplete="off">
+                        <label for="antwort3a">ein Messer</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort3b" name="antwort3" value="b">
-                        <label for="antwort3b">Antwort3b</label>
+                        <input type="radio" id="antwort3b" name="antwort3" value="b" autocomplete="off">
+                        <label for="antwort3b">dein Handy</label>
                     </div>
                 </fieldset>
 
                 <!--reversed order of answers is displayed (b before a)-->
 
-                <p>Frage4</p>
+                <p>Aah, Wein. Welche Aufgabe als Winzer wählst du?</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort4b" name="antwort4" value="b">
-                        <label for="antwort4b">Antwort4b</label>
+                        <input type="radio" id="antwort4b" name="antwort4" value="b" autocomplete="off">
+                        <label for="antwort4b">Pressen</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort4a" name="antwort4" value="a">
-                        <label for="antwort4a">Antwort4a</label>
+                        <input type="radio" id="antwort4a" name="antwort4" value="a" autocomplete="off">
+                        <label for="antwort4a">Niederziehen</label>
                     </div>
                 </fieldset>
 
-                <p>Frage5</p>
+                <p>Wenn du jeden Tag das Gleiche essen müsstest, dann am liebsten...</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort5b" name="antwort5" value="b">
-                        <label for="antwort5b">Antwort5b</label>
+                        <input type="radio" id="antwort5b" name="antwort5" value="b" autocomplete="off">
+                        <label for="antwort5b">Kaiserschmarrn</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort5a" name="antwort5" value="a">
-                        <label for="antwort5a">Antwort5a</label>
+                        <input type="radio" id="antwort5a" name="antwort5" value="a" autocomplete="off">
+                        <label for="antwort5a">Königsberger Klopse</label>
                     </div>
                 </fieldset>
 
-                <p>Frage6</p>
+                <p>Wähle ein Urlaubsziel:</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort6b" name="antwort6" value="b">
-                        <label for="antwort6b">Antwort6b</label>
+                        <input type="radio" id="antwort6b" name="antwort6" value="b" autocomplete="off">
+                        <label for="antwort6b">Italien, am Gardasee</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort6a" name="antwort6" value="a">
-                        <label for="antwort6a">Antwort6a</label>
+                        <input type="radio" id="antwort6a" name="antwort6" value="a" autocomplete="off">
+                        <label for="antwort6a">Frankreich</label>
                     </div>
                 </fieldset>
 
-                <p>Frage7</p>
+                <p>Unter dem Tisch liegen Krümel vom Abendessen. Und jetzt?</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort7b" name="antwort7" value="b">
-                        <label for="antwort7b">Antwort7b</label>
+                        <input type="radio" id="antwort7b" name="antwort7" value="b" autocomplete="off">
+                        <label for="antwort7b">Die saug' ich fix weg.</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort7a" name="antwort7" value="a">
-                        <label for="antwort7a">Antwort7a</label>
+                        <input type="radio" id="antwort7a" name="antwort7" value="a" autocomplete="off">
+                        <label for="antwort7a">Hä, wo sind da Krümel?</label>
                     </div>
                 </fieldset>
 
                 <!--regular order of answers recommences-->
 
-                <p>Frage8</p>
+                <p>Stell dir vor, du verwandelst dich in ein Werkzeug. Simsalabim, du bist...</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort8a" name="antwort8" value="a">
-                        <label for="antwort8a">Antwort8a</label>
+                        <input type="radio" id="antwort8a" name="antwort8" value="a" autocomplete="off">
+                        <label for="antwort8a">ein Hobel</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort8b" name="antwort8" value="b">
-                        <label for="antwort8b">Antwort8b</label>
+                        <input type="radio" id="antwort8b" name="antwort8" value="b" autocomplete="off">
+                        <label for="antwort8b">eine Gewindeschneidkluppe</label>
                     </div>
                 </fieldset>
 
-                <p>Frage9</p>
+                <p>Du findest eine Zeitmaschine. Sie hat genau zwei Knöpfe. Welchen drückst du?</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort9a" name="antwort9" value="a">
-                        <label for="antwort9a">Antwort9a</label>
+                        <input type="radio" id="antwort9a" name="antwort9" value="a" autocomplete="off">
+                        <label for="antwort9a">Mittelalter</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort9b" name="antwort9" value="b">
-                        <label for="antwort9b">Antwort9b</label>
+                        <input type="radio" id="antwort9b" name="antwort9" value="b" autocomplete="off">
+                        <label for="antwort9b">1. Weltkrieg - aber nur zum Gucken!</label>
                     </div>
                 </fieldset>
 
-                <p>Frage10</p>
+                <p>Du könntest nicht leben ohne...</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort10a" name="antwort10" value="a">
-                        <label for="antwort10a">Antwort10a</label>
+                        <input type="radio" id="antwort10a" name="antwort10" value="a" autocomplete="off">
+                        <label for="antwort10a">Süßigkeiten</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort10b" name="antwort10" value="b">
-                        <label for="antwort10b">Antwort10b</label>
+                        <input type="radio" id="antwort10b" name="antwort10" value="b" autocomplete="off">
+                        <label for="antwort10b">ein Motorrad</label>
                     </div>
                 </fieldset>
 
                 <!--reversed order of answers is displayed (b before a)-->
 
-                <p>Frage11</p>
+                <p>Du bist wahnsinnig berühmt! Was hat dich zum Superstar gemacht?</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort11b" name="antwort11" value="b">
-                        <label for="antwort11b">Antwort11b</label>
+                        <input type="radio" id="antwort11b" name="antwort11" value="b" autocomplete="off">
+                        <label for="antwort11b">Du findest immer eine Lösung - egal wie aussichtlos die Situation erscheint.</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort11a" name="antwort11" value="a">
-                        <label for="antwort11a">Antwort11a</label>
+                        <input type="radio" id="antwort11a" name="antwort11" value="a" autocomplete="off">
+                        <label for="antwort11a">????</label>
                     </div>
                 </fieldset>
 
-                <p>Frage12</p>
+                <p>Wähle ein Kleidungsstück, an dem man dich für den Rest deines Lebens erkennen kann:</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort12b" name="antwort12" value="b">
-                        <label for="antwort12b">Antwort12b</label>
+                        <input type="radio" id="antwort12b" name="antwort12" value="b" autocomplete="off">
+                        <label for="antwort12b">eine Cargohose</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort12a" name="antwort12" value="a">
-                        <label for="antwort12a">Antwort12a</label>
+                        <input type="radio" id="antwort12a" name="antwort12" value="a" autocomplete="off">
+                        <label for="antwort12a">eine Cordhose</label>
                     </div>
                 </fieldset>
 
-                <p>Frage13</p>
+                <p>Stell dir vor, es gibt ein Foto auf dem deine große Schwester dich quasi würgt. Stehst du auf dem Bild links oder rechts von ihr?</p>
                 <fieldset>
                     <div>
-                        <input type="radio" id="antwort13b" name="antwort13" value="b">
-                        <label for="antwort13b">Antwort13b</label>
+                        <input type="radio" id="antwort13b" name="antwort13" value="b" autocomplete="off">
+                        <label for="antwort13b">Hm, links? Aber sollte das nicht eher eine Umarmung sein?</label>
                     </div>
                     <div>
-                        <input type="radio" id="antwort13a" name="antwort13" value="a">
-                        <label for="antwort13a">Antwort13a</label>
+                        <input type="radio" id="antwort13a" name="antwort13" value="a" autocomplete="off">
+                        <label for="antwort13a">vermutlich rechts</label>
                     </div>
                 </fieldset>
 
                 <p></p>
-                <input type="submit" id="auswertenButton" value="Auswerten!" class="knopp">
+                <input type="submit" id="auswertenButton" value="zur Auswertung" class="knopp">
             </form>
           
             <!--Third Section: Evaluation Section-->
         </div>
         <div id="auswertung" class="invisible">
-            <h1>Das Ergebnis steht fest: Du bist ein</h1>
+            <h1>Das Ergebnis steht fest: Wenn du als Heinz oder als Charlie wiedergeboren werden würdest, wärst du eindeutig Typ </h1>
             <div id="ergebnis"></div>
             <button id="goAgainButton" class="knopp">Nochmal?</button>
             <!--goAgainButton takes the site back to it's original settings-->

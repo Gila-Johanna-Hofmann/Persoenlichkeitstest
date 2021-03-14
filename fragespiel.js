@@ -56,7 +56,7 @@ function evaluateResults() {
         ergebnis.style.color = "blue";
         picture.src = "heinz.jpg";
     } else {
-        ergebnis.innerText = "Charly";
+        ergebnis.innerText = "Charlie";
         ergebnis.style.color = "blue";
         picture.src = "horst.jpg";
     }
@@ -65,6 +65,10 @@ function evaluateResults() {
 
 }
 
+function scrollToTop() { 
+    window.scrollTo(0, 0); 
+} 
+
 /*thie button click takes the site back to the original settings.
 the quiz can be taken again*/
 function submitButtonClick(event) {
@@ -72,6 +76,7 @@ function submitButtonClick(event) {
     quizteil.classList.add("invisible");
     auswertung.classList.remove("invisible");
     evaluateResults();
+    scrollToTop();
 
 }
 
@@ -80,6 +85,7 @@ auswertenButton.addEventListener("click", submitButtonClick);
 goAgainButton.addEventListener("click", function () { /* <--- das ist 
     eine anonyme Funktion!!!!!!!!!*/
     location.reload();
+    scrollToTop();
 })
 
 /*when working on the #quizteil section, the following can be 
