@@ -42,7 +42,7 @@ function evaluateResults() {
 
     if (heinz > horst) {
         ergebnis.innerText = "Heinz";
-        ergebnis.style.color = "brown";
+        ergebnis.style.color = "blue";
         picture.src = "heinz.jpg";
     } else {
         ergebnis.innerText = "Charly";
