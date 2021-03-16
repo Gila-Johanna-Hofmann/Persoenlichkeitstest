@@ -8,7 +8,7 @@ To the user, the project appears as a start page, the actual quiz page and then 
 The project can be customized to any test that has an either-or outcome and the amount of questions and use of pictures can easily be customized.
 
 
-##Technologies
+## Technologies
 HTML5, CSS and JavaScript.
 Responsive design.
 
