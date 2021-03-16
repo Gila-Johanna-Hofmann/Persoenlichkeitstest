@@ -7,6 +7,11 @@ The project is set up as just one index page, which is sectioned in three parts.
 To the user, the project appears as a start page, the actual quiz page and then a third and last page with a result. The user navigates the "pages"/sections via buttons.
 The project can be customized to any test that has an either-or outcome and the amount of questions and use of pictures can easily be customized.
 
+
+##Technologies
+HTML5, CSS and JavaScript.
+Responsive design.
+
 ## Status
 Project is: _finished_
 
