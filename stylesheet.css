@@ -32,7 +32,7 @@ default for sections #quizsection and #evaluation*/
     display: none;
 }
 
-#landingpage, #evaluation {
+#startpage, #evaluation {
     text-align: center;
 }
 
@@ -60,7 +60,7 @@ fieldset {
     font-weight: bolder;
 }
 
-#result>img, #landingpage>img {
+#result>img, #startpage>img {
     display: block;
     width: 80%;
     height: auto;

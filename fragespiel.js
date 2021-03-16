@@ -1,6 +1,6 @@
 /*DOMs*/
 
-const landingpage = document.getElementById("landingpage"); //erzeugt ein Element aus den html-Elementen
+const startpage = document.getElementById("startpage"); //erzeugt ein Element aus den html-Elementen
 
 const startbutton = document.getElementById("startbutton");
 
@@ -14,7 +14,7 @@ const goAgainButton = document.getElementById("goAgainButton");
 
 /*changing visibility of sections via click of startbutton*/
 function startbuttonClick() {
-    landingpage.classList.add("invisible");
+    startpage.classList.add("invisible");
     quizsection.classList.remove("invisible");
 }
 
@@ -47,7 +47,7 @@ function evaluateResults() {
 
     /*for learning purposes and because the picture and text displayed
     depend on the outcome: instead of linking the picture in the 
-    html as with the #landingpage section, I decided to link the 
+    html as with the #startpage section, I decided to link the 
     picture for the #evaluation section with JS, using the #result id*/
     const picture = document.createElement("img");
 
