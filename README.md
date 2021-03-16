@@ -1,5 +1,4 @@
-# Project Name
-Persoenlichkeitstest - personality test
+# Persoenlichkeitstest - personality test
 
 ## General info
 The personality test was developed as a training project and a birthday present.
