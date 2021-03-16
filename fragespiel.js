@@ -1,21 +1,21 @@
 /*DOMs*/
 
-const startseite = document.getElementById("startseite"); //erzeugt ein Element aus den html-Elementen
+const landingpage = document.getElementById("landingpage"); //erzeugt ein Element aus den html-Elementen
 
 const startbutton = document.getElementById("startbutton");
 
-const quizteil = document.getElementById("quizteil");
+const quizsection = document.getElementById("quizsection");
 
-const auswertung = document.getElementById("auswertung");
+const evaluation = document.getElementById("evaluation");
 
-const auswertenButton = document.getElementById("auswertenButton");
+const evaluationButton = document.getElementById("evaluationButton");
 
 const goAgainButton = document.getElementById("goAgainButton");
 
 /*changing visibility of sections via click of startbutton*/
 function startbuttonClick() {
-    startseite.classList.add("invisible");
-    quizteil.classList.remove("invisible");
+    landingpage.classList.add("invisible");
+    quizsection.classList.remove("invisible");
 }
 
 startbutton.addEventListener("click", startbuttonClick);
@@ -41,27 +41,27 @@ function evaluateResults() {
             horst += 1;
         }
     }
-    let ergebnis = document.getElementById("ergebnis");
+    let result = document.getElementById("result");
 
     console.log(heinz, horst);
 
     /*for learning purposes and because the picture and text displayed
     depend on the outcome: instead of linking the picture in the 
-    html as with the #startseite section, I decided to link the 
-    picture for the #auswertung section with JS, using the #ergebnis id*/
+    html as with the #landingpage section, I decided to link the 
+    picture for the #evaluation section with JS, using the #result id*/
     const picture = document.createElement("img");
 
     if (heinz > horst) {
-        ergebnis.innerText = "Heinz";
-        ergebnis.style.color = "blue";
+        result.innerText = "Heinz";
+        result.style.color = "blue";
         picture.src = "heinz.jpg";
     } else {
-        ergebnis.innerText = "Charlie";
-        ergebnis.style.color = "blue";
+        result.innerText = "Charlie";
+        result.style.color = "blue";
         picture.src = "horst.jpg";
     }
 
-    ergebnis.appendChild(picture);
+    result.appendChild(picture);
 
 }
 
@@ -73,14 +73,14 @@ function scrollToTop() {
 the quiz can be taken again*/
 function submitButtonClick(event) {
     event.preventDefault();
-    quizteil.classList.add("invisible");
-    auswertung.classList.remove("invisible");
+    quizsection.classList.add("invisible");
+    evaluation.classList.remove("invisible");
     evaluateResults();
     scrollToTop();
 
 }
 
-auswertenButton.addEventListener("click", submitButtonClick);
+evaluationButton.addEventListener("click", submitButtonClick);
 
 goAgainButton.addEventListener("click", function () { /* <--- das ist 
     eine anonyme Funktion!!!!!!!!!*/
@@ -88,8 +88,8 @@ goAgainButton.addEventListener("click", function () { /* <--- das ist
     scrollToTop();
 })
 
-/*when working on the #quizteil section, the following can be 
-uncommented, so the sites always dispplayes the #quizteil section*/
+/*when working on the #quizsection, the following can be 
+uncommented, so the sites always dispplayes the #quizsection*/
 // startbuttonClick(); 
 
 

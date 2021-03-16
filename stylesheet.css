@@ -5,7 +5,7 @@
 }
 
 
-.knopp { /*styling for the buttons*/
+.buttons { /*styling for the buttons*/
     background-color: red;
     color: white;
     font-size: xx-large;
@@ -20,19 +20,19 @@ body {
     background-color:plum;
 }
 
-#rahmen {
+#frame {
     max-width: 800px;
     width: 100%;
     margin:0 auto;
 }
 
 /*used in JS to make sections of index.html appear/disappear;
-default for sections #quizteil and #auswertung*/
+default for sections #quizsection and #evaluation*/
 .invisible { 
     display: none;
 }
 
-#startseite, #auswertung {
+#landingpage, #evaluation {
     text-align: center;
 }
 
@@ -45,22 +45,22 @@ fieldset {
     border: none;
 }
 
-#auswertenButton {
+#evaluationButton {
     margin: 0 auto;
     display: block; 
 }
 
-#quizteil>h1 {
+#quizsection>h1 {
     text-align: center;
 }
 
-#ergebnis {
+#result {
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
 }
 
-#ergebnis>img, #startseite>img {
+#result>img, #landingpage>img {
     display: block;
     width: 80%;
     height: auto;
