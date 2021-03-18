@@ -82,8 +82,7 @@ function submitButtonClick(event) {
 
 evaluationButton.addEventListener("click", submitButtonClick);
 
-goAgainButton.addEventListener("click", function () { /* <--- das ist 
-    eine anonyme Funktion!!!!!!!!!*/
+goAgainButton.addEventListener("click", function () {
     location.reload();
     scrollToTop();
 })
@@ -91,5 +90,3 @@ goAgainButton.addEventListener("click", function () { /* <--- das ist
 /*when working on the #quizsection, the following can be 
 uncommented, so the sites always dispplayes the #quizsection*/
 // startbuttonClick(); 
-
-
